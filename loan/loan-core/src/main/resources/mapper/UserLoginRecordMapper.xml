@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bxx.loan.core.mapper.UserLoginRecordMapper">
+
+    <select id="selectByIdOrder" resultType="com.bxx.loan.core.pojo.entity.UserLoginRecord">
+        select
+            id, create_time
+        from
+            user_login_record
+        where
+            is_deleted = 0 AND user_id = #{userId}
+        order by
+            id desc
+        limit 0, 1
+    </select>
+
+
+    <select id="getListTop50" resultType="com.bxx.loan.core.pojo.entity.UserLoginRecord">
+        select
+            *
+        from
+            user_login_record
+        where
+            is_deleted = 0 and user_id = #{userId}
+        order by
+            id desc
+        limit 0, 50
+    </select>
+</mapper>

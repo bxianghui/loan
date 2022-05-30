@@ -1,0 +1,4 @@
+com\bxx\loan\base\config\Swagger2Config.class
+com\bxx\loan\base\config\OpenFeignConfig.class
+com\bxx\loan\base\config\RedisConfig.class
+com\bxx\loan\base\util\JWTUtils.class

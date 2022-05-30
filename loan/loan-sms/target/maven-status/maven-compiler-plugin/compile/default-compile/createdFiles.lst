@@ -1,0 +1,7 @@
+com\bxx\loan\sms\SmsApplication.class
+com\bxx\loan\sms\fallback\SendMessageServiceFallBack.class
+com\bxx\loan\sms\service\impl\SendMessageServiceImpl.class
+com\bxx\loan\sms\controller\web\SendMessageController.class
+com\bxx\loan\sms\service\SendMessageService.class
+com\bxx\loan\sms\fallback\ISendMessageFallBack.class
+com\bxx\loan\sms\service\ISendMessageService.class

@@ -1,0 +1,6 @@
+com\bxx\loan\oss\service\FileService.class
+com\bxx\loan\oss\OssApplication.class
+com\bxx\loan\oss\util\OssProperties.class
+com\bxx\loan\oss\controller\web\FileController.class
+META-INF\spring-configuration-metadata.json
+com\bxx\loan\oss\service\impl\FileServiceImpl.class

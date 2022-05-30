@@ -1,0 +1,25 @@
+server:
+  port: 3100
+
+spring:
+  application:
+    name: loan-oss
+  profiles:
+    active: dev
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+
+aliyun:
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com
+    key-id: LTAI5tRgu6uLzGiamQCUPr3w
+    bucket-name: loan-202205
+    key-secret: kGw1W2cyRllUdcjjDSCTTHOV4GQ7cq

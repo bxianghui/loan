@@ -1,0 +1,55 @@
+server:
+  port: 3001
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  profiles:
+    active: dev
+  application:
+    name: loan-core
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+
+    sentinel:
+      enabled: true
+      web-context-unify: false
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+
+
+
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/srb_core?serverTimeZone=GMT%2B8&characterEncoding=utf8
+    username: root
+    password: Bxh124...
+
+
+
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 3000ms
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+  mapper-locations: classpath:mapper/*.xml

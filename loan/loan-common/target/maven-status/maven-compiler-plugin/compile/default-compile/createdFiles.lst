@@ -1,0 +1,7 @@
+com\bxx\loan\common\result\ResponseEnum.class
+com\bxx\loan\common\result\Result.class
+com\bxx\loan\common\util\MD5.class
+com\bxx\loan\common\exception\Assert.class
+com\bxx\loan\common\exception\BusinessException.class
+com\bxx\loan\common\util\HttpUtils.class
+com\bxx\loan\common\handler\CommonExceptionHandler.class
