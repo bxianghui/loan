@@ -22,7 +22,7 @@ Redis
 
 HttpClient  远程调用第三方支付平台 汇付宝（SpringBoot项目）
 
-第三方接口
+第三方接口  （如果您要下载本项目并部署，请修改配置文件中阿里云Accsess Key）
 
 Alibaba oss
 
@@ -35,8 +35,6 @@ Alibaba sms  （申请阿里云短信服务要求很严格，本项目直接使�
 mysql 8.×  
 
 navicat
-
-项目框架
 
 
 
