@@ -73,8 +73,7 @@ public class Amount4Helper {
      */
     public static BigDecimal getInterestCount(BigDecimal amount, BigDecimal yearRate, int totalmonth) {
         BigDecimal monthInterest = yearRate.divide(new BigDecimal("12"), 8, BigDecimal.ROUND_HALF_UP);
-        BigDecimal multiply =amount.multiply(monthInterest).multiply(new BigDecimal(totalmonth)).divide(new BigDecimal("1"), 8, BigDecimal.ROUND_HALF_UP);
-        return multiply;
+        return amount.multiply(monthInterest).multiply(new BigDecimal(totalmonth)).divide(new BigDecimal("1"), 8, BigDecimal.ROUND_HALF_UP);
     }
 
 
