@@ -34,9 +34,9 @@ public class Amount4Helper {
      */
     public static BigDecimal getOneMonthInterest(BigDecimal amount, BigDecimal yearRate, int totalmonth) {
         BigDecimal monthInterest = yearRate.divide(new BigDecimal("12"), 8, BigDecimal.ROUND_HALF_UP);
-        BigDecimal multiply = amount.multiply(monthInterest).multiply(new BigDecimal(totalmonth));
+        return amount.multiply(monthInterest).multiply(new BigDecimal(totalmonth));
 
-        return multiply;
+//         multiply;
     }
 
 

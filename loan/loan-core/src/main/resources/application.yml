@@ -30,7 +30,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/srb_core?serverTimeZone=GMT%2B8&characterEncoding=utf8
     username: root
-    password: Bxh124...
+    password: root
 
 
 
