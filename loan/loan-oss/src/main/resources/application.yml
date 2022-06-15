@@ -17,7 +17,7 @@ spring:
       max-file-size: 10MB
       max-request-size: 100MB
 
-aliyun:
+aliyun:     #个人阿里云的AccessKey
   oss:
     endpoint: oss-cn-hangzhou.aliyuncs.com
     key-id: LTAI5tRgu6uLzGiamQCUPr3w
