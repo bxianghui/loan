@@ -121,8 +121,7 @@ public class BorrowerServiceImpl extends ServiceImpl<BorrowerMapper, Borrower> i
         if (objects.size() == 0){
             return BorrowStatusEnum.NO_AUTH.getStatus();
         }
-        Integer status = (Integer)objects.get(0);
-        return status;
+        return (Integer)objects.get(0);
     }
 
     /**
