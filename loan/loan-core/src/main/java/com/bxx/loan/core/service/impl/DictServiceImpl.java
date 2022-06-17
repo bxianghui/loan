@@ -147,8 +147,7 @@ public class DictServiceImpl extends ServiceImpl<DictMapper, Dict> implements Di
         queryWrapper.select("id").eq("dict_code", dictCode);
         List<Object> objects = baseMapper.selectObjs(queryWrapper);
         Long parentId = (Long) objects.get(0);
-        List<Dict> dictList = listSelectByParentId(parentId);
-        return dictList;
+        return listSelectByParentId(parentId);
     }
 
 }
