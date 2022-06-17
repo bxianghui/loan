@@ -142,8 +142,7 @@ public class BorrowInfoServiceImpl extends ServiceImpl<BorrowInfoMapper, BorrowI
     @Override
     public BigDecimal getBorrowAmount(Long userId) {
         UserIntegral userIntegral = userIntegralMapper.selectOne(new QueryWrapper<UserIntegral>().eq("user_id", userId));
-        BigDecimal amount = integralGradeService.getGrade(userIntegral.getIntegral());
-        return amount;
+        return integralGradeService.getGrade(userIntegral.getIntegral());
     }
 
     /**
