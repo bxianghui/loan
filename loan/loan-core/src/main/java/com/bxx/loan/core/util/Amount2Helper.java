@@ -116,8 +116,7 @@ public class Amount2Helper {
      * @return 总利息
      */
     public static BigDecimal getOneMonthPrincipal(BigDecimal invest, int totalMonth) {
-        BigDecimal monthIncome = invest.divide(new BigDecimal(totalMonth), 8, BigDecimal.ROUND_DOWN);
-        return monthIncome;
+        return invest.divide(new BigDecimal(totalMonth), 8, BigDecimal.ROUND_DOWN);
     }
 
 

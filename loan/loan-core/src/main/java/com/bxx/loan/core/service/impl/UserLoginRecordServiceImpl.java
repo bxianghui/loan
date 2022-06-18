@@ -22,7 +22,6 @@ public class UserLoginRecordServiceImpl extends ServiceImpl<UserLoginRecordMappe
 
     @Override
     public List<UserLoginRecord> getListTop50(Long userId) {
-        List<UserLoginRecord> records = baseMapper.getListTop50(userId);
-        return records;
+        return baseMapper.getListTop50(userId);
     }
 }
