@@ -9,7 +9,8 @@
 
 ## 项目地址  （数据全虚拟，可以随便填写, 还存在一些bug后续慢慢改进） 
 	前台：http://www.bxhxk.top  前台用户注册功能手机短信没有实现  验证码是手机号的前四位  hfb绑定用户信息时 手机验证码随便填写
-	后台：http://www.bxhxk.top/admin/）     建议使用ip访问
+	后台：http://www.bxhxk.top/admin/）     建议使用ip访问 		
+	接口api：http://www.bxhxk.top:3001/doc.html
 
 
 ## 项目介绍
